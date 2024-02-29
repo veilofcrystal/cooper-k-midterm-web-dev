@@ -8,12 +8,17 @@ body {
     color: rgb(27, 27, 27);
     border: 2px solid black;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom:10px;
+    
   }
  
+  #pic-1, #pic-2, #pic-3, #pic-4 {
+      height: 320px;
+  }
+
+  
  
  .full-width-grid-con {
  display: grid; 
@@ -23,13 +28,24 @@ body {
  .grid-con { 
  display: grid;
  grid-template-columns: repeat(4, minmax(0, 1fr));
- grid-column-gap: 30px;
+ grid-column-gap: 16px;
  max-width: 1200px;
  margin: 0 auto;
  padding-left: 15px;
  padding-right: 15px;
  }
  
+ .overlay-grid {
+   position: absolute;
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   grid-column-gap: 16px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   z-index: 1;
+ }
  
  .col-span-1	{grid-column: span 1 / span 1;}
  .col-span-2	{grid-column: span 2 / span 2;}
@@ -48,21 +64,26 @@ body {
  .col-end-4	{grid-column-end: 4;}
  .col-end-5	{grid-column-end: 5;}
  
- .image {
-    display: none;
- }
  
  @media screen and (min-width: 768px) { 
  
-    .image {
-       display: none;
-    }
+   
      .grid-con { 
         display: grid; 
         grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-column-gap: 15;
         padding-left: 10px;
         padding-right: 10px;
+     }
+
+     .overlay-grid {
+      position: absolute;
+      display: grid; 
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-gap: 15;
+      padding-left: 10px;
+      padding-right: 10px;
+      z-index:1;
      }
   
      .m-col-span-1	{grid-column: span 1 / span 1;}
@@ -115,14 +136,22 @@ body {
     .grid-con { 
        display: grid; 
        grid-template-columns: repeat(12, minmax(0, 1fr));
-       grid-column-gap: 30px;
+       grid-column-gap: 16px;
        padding-left: 15px;
        padding-right: 15px;
     }
- 
-    .image{
-       display: block;
+
+    .overlay-grid{
+      position: absolute;
+      display: grid; 
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-gap: 16px;
+      padding-left: 15px;
+      padding-right: 15px;
+      z-index: 1  ;
+
     }
+ 
     
     .l-col-span-1	{grid-column: span 1 / span 1;}
     .l-col-span-2	{grid-column: span 2 / span 2;}

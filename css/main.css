@@ -1,0 +1,5 @@
+#product-pic, #product-pic-2, #product-pic-3, #product-pic-4 {
+    border: 3px solid black;
+    height: 340px;
+    margin-top: 15px;
+}
