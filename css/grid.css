@@ -18,7 +18,9 @@ body {
       height: 320px;
   }
 
-  
+   .p-p {
+      height: 300px;
+   }
  
  .full-width-grid-con {
  display: grid; 
