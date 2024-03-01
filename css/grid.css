@@ -3,6 +3,9 @@ body {
     padding: 0px;
  }
  
+ nav, li {
+   display: inline-block;
+ }
  .box {
     background-color: powderblue;
     color: rgb(27, 27, 27);
@@ -18,10 +21,20 @@ body {
       height: 320px;
   }
 
+  button {
+   height: 50px;
+   padding-top:10px;
+  }
+
    .p-p {
       height: 300px;
+      
    }
  
+   .n-f {
+      height: 220px;
+      margin:0px;
+   }
  .full-width-grid-con {
  display: grid; 
  grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
